@@ -1,44 +1,39 @@
-# Threat Intelligence Hub (TIH) - Product Specification
+# Threat Intelligence Hub (TIH)
 
-## Executive Summary
+**Cyber threats in plain English. Device-level relevance. Proof you acted.**
 
-**Threat Intelligence Hub (TIH)** is a noise-free threat intelligence platform that translates complex cybersecurity threats into plain English for non-technical audiences. We solve the 97% problem: most people don't understand threat intelligence or know if they should care.
+Stop drowning in 10,000 daily alerts. Get 2-5 threats that actually affect YOUR devices. Explained so you understand. Tracked so you prove action.
 
-**Rating: 9.5/10** - Executable, differentiated, scalable SaaS product
+**Rating: 9.5/10** - Blue ocean market, executable MVP, defensible moat
 
 ---
 
-## 🎯 The Problem We're Solving
+## 🎯 The Problem
 
-### Current State of Threat Intelligence
-
-Traditional threat intelligence platforms fail because:
+### Traditional Threat Intelligence Fails
 
 ```
-Traditional TI Platform:
-├─ Ingests 50+ feeds
-├─ Generates 10,000 alerts/day
-├─ 95% false positives/noise
-├─ Requires security analysts to interpret
-├─ Uses technical jargon (CVEs, IOCs, CPEs)
-├─ No personalization
-└─ Result: Alert fatigue, ignored alerts, zero ROI
+Enterprise TI Platforms:
+├─ 10,000 alerts/day (95% noise)
+├─ Technical jargon (CVE-2024-1234...)
+├─ $10K-100K/year
+├─ Requires security analysts
+└─ Result: Ignored alerts, $0 ROI
 
-Target Audience: 3% (Security professionals)
-Language: "CVE-2024-1234: RCE in webkit parsing engine"
-Problem: Inaccessible to normal people
+Who Uses Them: 3% (Security professionals)
+Who's Left Behind: 97% (Everyone else)
 ```
 
-### Who Gets Left Behind
+### The 97% Problem
 
-**97% of people who need threat intelligence but can't access it:**
-- Individual consumers (household users)
+**People who need threat intel but can't access it:**
+- Household users (3-5 devices, want to know "am I at risk?")
 - Small business owners (no security team)
-- Non-technical executives
-- IT managers at SMBs
-- Tech-curious public
+- IT managers at SMBs (wear too many hats)
+- NGOs/Non-profits (targeted but under-resourced)
+- Tech-curious public (care about security, don't understand it)
 
-**They all ask the same questions:**
+**They all ask:**
 - "Does this threat affect ME?"
 - "Should I care?"
 - "What should I DO?"
@@ -49,1485 +44,818 @@ Problem: Inaccessible to normal people
 
 ## 💡 Our Solution
 
-### The TIH Approach
+### Device-Level Threats, Plain English, Proof of Action
+
+**Traditional:** "10,000 threats today. Good luck."
+
+**TIH:** "You own iPhone 14 + MacBook. Here are 2 threats affecting those. Update now. Mark done when patched."
 
 ```
 Threat Intelligence Hub:
-├─ Ingests 5-10 high-quality feeds (curated)
-├─ Filters by USER'S specific devices (personalized)
-├─ Generates 2-5 relevant alerts/week (noise-free)
-├─ Translates to plain English (no jargon)
-├─ Categorizes by threat type (STRIDE)
+├─ Ingests 5-10 curated feeds (not 50)
+├─ Filters by YOUR specific devices (iPhone, not "all phones")
+├─ Generates 2-5 alerts/week (not 10K/day)
+├─ Translates to plain English (not CVE jargon)
+├─ Categorizes by threat type (STRIDE: Elevation, Disclosure, DoS)
 ├─ Maps to attacker techniques (MITRE ATT&CK)
-├─ Provides specific actions (not just "patch")
-└─ Result: High engagement, trusted alerts, actionable intelligence
+├─ Provides specific actions ("Settings → Update")
+├─ Tracks proof ("Updated on Nov 12, 2025")
+└─ Result: High engagement, trusted alerts, audit trail
 
-Target Audience: 97% (Everyone else)
-Language: "Update your iPhone today. Hackers can access your photos."
-Solution: Finally accessible
+Target: 97% (Everyone else)
+Language: "Update iPhone. Hackers can access photos."
+Proof: "Sarah patched on Nov 12. Bob pending."
 ```
-
-### Core Innovation: Device-Based Filtering
-
-**Traditional approach:**
-> "Here are 10,000 threats today. Figure out which ones matter to you."
-
-**Our approach:**
-> "You own an iPhone 14 and a MacBook. Here are the 2 threats that affect those devices."
-
-**Why this works:**
-- ✅ Eliminates 95% of noise automatically
-- ✅ No triage overhead required
-- ✅ Every alert is relevant = user trusts system
-- ✅ Scales without analysts
-- ✅ Works for non-technical users
 
 ---
 
-## 🎖️ Why This Works: Veteran CISO Assessment
+## 🎖️ Why This Works: Veteran Assessment
 
-**Background**: 35+ years cybersecurity, CISSP, CISM, GIAC, Former CISO at Fortune 500s
+**Background**: 35yr developer, 20yr DevOps, 15yr BISO, Former Fortune 500 CISO
 
-### Seven Reasons This Succeeds
+### Seven Strategic Advantages
 
-1. **Solves Real Problem** - Threat intel noise is genuine industry pain point
-2. **Underserved Market** - 97% of people ignored by current solutions
-3. **Avoids Scope Creep** - Not trying to be GRC/SIEM/CTEM tool
-4. **Leverages Existing Tech** - Uses MISP/OpenCTI (open source)
-5. **Natural Monetization** - Clear upgrade path: personal → SMB → MSP
+1. **Blue Ocean Market** - No one serves the 97% with accessible threat intel
+2. **Real Pain Point** - Alert fatigue is genuine, noise is the enemy
+3. **Avoids Scope Creep** - Not GRC/SIEM/CTEM, just threat intel done right
+4. **Leverages Open Source** - MISP/OpenCTI backend (proven, maintained)
+5. **Natural Monetization** - Free → Pro → SMB → MSP (clear upgrade path)
 6. **Defensible Moat** - Translation quality + device catalog + user habits
-7. **Perfect Timing** - Cyber awareness at all-time high, AI makes translation feasible
+7. **Perfect Timing** - Cyber awareness high, AI enables translation, consumers want clarity
 
-### Key Insight: Progressive Disclosure
+### Key Insight: Product-Led Growth
 
-**Same dashboard for all users, adaptive complexity:**
+**Same platform for all, complexity adapts as users grow:**
 
 ```
-Free Tier (Personal User):
-└─ "Your iPhone needs update. Hackers can access photos. Update now."
+Free (Household):
+"Your iPhone needs update. Hackers access photos. Update now."
 
-SMB Tier (IT Manager):
-└─ "5 company devices need patches. Assign to team. STRIDE: E, MITRE: T1068."
+Pro (Power User):
+"5 devices need patches. Mark done when updated."
 
-MSP Tier (Service Provider):
-└─ "Client Acme Corp: 3 critical alerts. SLA: 4 hours remaining."
+SMB (IT Manager):
+"Team devices: 3 critical, 2 pending. Assign to Bob."
+
+MSP (Service Provider):
+"Client Acme: 8 alerts. Client Beta: 2 alerts."
 ```
 
-**Same navigation, same UI, just more depth as users grow.**
-
-This creates:
-- ✅ Zero friction conversion (familiar interface)
-- ✅ Natural upgrade path (add features, not complexity)
-- ✅ Reduced churn (downgrade = read-only, not locked out)
-- ✅ Viral growth (share with team = instant upsell)
+**Why this wins:**
+- ✅ Zero friction upgrades (familiar UI)
+- ✅ Natural growth path (life events = upgrades)
+- ✅ Viral loop (share with team = discover value)
+- ✅ Low churn (downgrade = read-only, not locked out)
 
 ---
 
-## 👥 Target Audience
+## 👥 Who We Serve
 
-### Primary Users (Free Tier)
+### Primary: Household Users (Free Tier)
 
-**Household Users:**
-- Own 3-5 devices (phone, computer, router)
-- Want to know if they're at risk
+**Profile:**
+- 3-5 devices (phone, laptop, router, IoT)
+- Tech-aware but not security experts
 - Will act if explanation is clear
-- Won't pay unless value is proven
+- Want peace of mind
 
-**Success metric:** 80% weekly active, 40%+ email open rate
-
-### Secondary Users (Paid Tiers)
-
-**SMB Owners/IT Managers:**
-- Manage 10-100 devices
-- No dedicated security team
-- Need simple threat monitoring
-- Will pay $49/mo for clarity + compliance evidence
-
-**MSP/Service Providers:**
-- Manage multiple clients (10-50+)
-- Need multi-tenant dashboard
-- Want to offer threat intel to clients
-- Will pay $499+/mo for efficiency + white-label
+**Success metric:** 40%+ email open rate, 80% weekly active
 
 ---
 
-## 🚀 NOW: MVP Core Features (Detailed)
+### Secondary: SMBs & IT Managers (Paid)
 
-### What We're Building First
+**Profile:**
+- 10-100 devices across team
+- No dedicated security staff
+- Need simple threat monitoring
+- Want compliance evidence
 
-#### 1. Threat Intelligence Ingestion & Curation
+**Success metric:** $49/mo retention >85%, NPS >50
 
-**Data Sources:**
-- MISP or OpenCTI (open-source backend)
-- 5-10 high-quality public feeds:
-  - CISA KEV (Known Exploited Vulnerabilities)
-  - AlienVault OTX
-  - Abuse.ch (malware, botnet tracking)
-  - NVD (National Vulnerability Database)
-  - Vendor-specific feeds (Microsoft, Apple, Google)
+---
+
+### Tertiary: NGOs & Non-Profits (Free/Low-Cost)
+
+**Profile:**
+- Activists, journalists, mission-driven orgs
+- High-value targets (nation-states, hacktivists)
+- Under-resourced security
+- Need protection, can't afford enterprise tools
+
+**Success metric:** Case studies, referrals, mission impact
+
+**Why we serve them:**
+- ✅ Right thing to do (mission-aligned)
+- ✅ PR and credibility (protecting vulnerable communities)
+- ✅ Case studies (compelling stories for marketing)
+- ✅ Network effects (NGOs talk to other NGOs)
+
+---
+
+### Future: MSPs & Enterprises
+
+**MSP Tier** (When they discover us via clients):
+- Multi-tenant white-label platform
+- Manage 10-50+ client organizations
+- API access, bulk operations
+- Revenue: $499/mo base + $10/client
+
+**Enterprise Tier** (When SMBs outgrow):
+- On-premise deployment options
+- SSO, advanced RBAC
+- Custom integrations
+- Revenue: Custom ($2,499+/mo)
+
+---
+
+## 🚀 NOW: MVP Core Features
+
+### 1. Threat Intelligence Ingestion
+
+**Data Sources** (5-10 curated feeds):
+- CISA KEV (Known Exploited Vulnerabilities)
+- NVD (National Vulnerability Database)
+- AlienVault OTX
+- Abuse.ch
+- Vendor feeds (Microsoft, Apple, Google security advisories)
+
+**Backend:** MISP or OpenCTI (open source, battle-tested)
 
 **Processing:**
 - Automated deduplication
-- Normalization to common schema
 - CVE/CPE extraction
+- MITRE ATT&CK mapping
 - Severity scoring
-- Real-time ingestion (daily batch for MVP)
 
-**Why this matters:** Foundation of platform - without quality data, nothing else works
+**Why:** Foundation. Without quality data, nothing else works.
 
 ---
 
-#### 2. Device-Based Filtering (The Secret Sauce)
+### 2. Device-Based Filtering (Secret Sauce)
 
-**Device Catalog (MVP Scope: 100 devices):**
+**Device Catalog (100 devices for MVP):**
 
 ```
-Mobile Phones (30):
-├─ iPhone 11, 12, 13, 14, 15 (all variants)
-├─ Samsung Galaxy S21-S24 series
-├─ Google Pixel 6, 7, 8
-└─ Top 5 Android flagships
-
-Computers (25):
-├─ MacBook Air/Pro (M1, M2, M3)
-├─ Windows 10, 11 (generic)
-├─ Dell XPS, HP Pavilion, Lenovo ThinkPad
-└─ Generic "Windows PC" entry
-
-Home/IoT (20):
-├─ Ring Doorbell, Video Doorbell Pro
-├─ Nest Thermostat, Camera
-├─ Amazon Echo/Alexa devices
-├─ Popular routers (TP-Link, Netgear, Google WiFi)
-└─ Smart home devices (Philips Hue, etc.)
-
-Network/ISP (15):
-├─ Major US ISPs (Comcast, Verizon, AT&T, Spectrum)
-└─ Internet service providers
-
-SaaS/Services (10):
-├─ Gmail/Google Workspace
-├─ Microsoft 365
-├─ Zoom, Slack, Dropbox
-└─ Common business tools
+Mobile (30): iPhone 11-15, Samsung S21-S24, Pixel 6-8
+Computers (25): MacBook (M1-M3), Windows 10/11, Dell/HP/Lenovo laptops
+Home/IoT (20): Ring, Nest, Alexa, routers (TP-Link, Netgear, Google WiFi)
+ISPs (15): Comcast, Verizon, AT&T, Spectrum
+SaaS (10): Gmail, Microsoft 365, Zoom, Slack, Dropbox
 ```
 
 **Matching Algorithm:**
-
 ```
-Tier 1: Exact CPE Match (Automated)
-├─ CVE contains CPE identifier
-├─ Match to device catalog CPE
-├─ Confidence: 100%
-└─ No human intervention
-
-Tier 2: Vendor/Product Match (Semi-automated)
-├─ CVE mentions "Apple iPhone"
-├─ AI extracts vendor/product
-├─ Match to all iPhone models in catalog
-├─ Confidence: 80%
-└─ Human review for edge cases
-
-Tier 3: Generic Match (Manual)
-├─ User has "Windows PC" (generic)
-├─ CVE affects Windows OS
-├─ Match all Windows users
-└─ Human review required for accuracy
+Tier 1: Exact CPE match (100% confidence, automated)
+Tier 2: Vendor/product match (80% confidence, AI + human review)
+Tier 3: Generic match (60% confidence, manual review)
 ```
 
-**Scalability Strategy:**
-- Start with 100 popular devices (covers 80% of users)
-- Add "Request a Device" feature in onboarding
-- Prioritize additions by user demand
-- Crowdsourced catalog building
+**Scalability:**
+- Start with 100 devices (covers 80% of users)
+- Add "Request Device" feature (crowdsourced growth)
+- Prioritize by user demand (data-driven)
 
-**Why this matters:** This IS our differentiation - relevance over volume
+**Why:** THIS is differentiation. Relevance beats volume.
 
 ---
 
-#### 3. Plain English Translation Engine
+### 3. Plain English Translation
 
-**The Problem:**
+**Before TIH:**
 ```
-Technical (CVE Database):
-"CVE-2024-1234: A use-after-free vulnerability in the
-implementation of the WebRTC component in Google Chrome
-prior to 120.0.6099.109 allows a remote attacker to
-potentially exploit heap corruption via a crafted HTML page."
+"CVE-2024-1234: Use-after-free in WebRTC component in Chrome
+prior to 120.0.6099.109 allows remote attacker to exploit
+heap corruption via crafted HTML page."
 
-User reads: "??? Do I need to do something?"
+User: "??? Should I do something?"
 ```
 
-**Our Solution:**
+**After TIH:**
 ```
 🔴 URGENT: Update Chrome Now
 
-What: Security bug lets hackers take control
-Who: Anyone using Chrome browser
-Why: Criminals are using this RIGHT NOW
-Do: Open Chrome → Settings → Update (2 minutes)
+What: Bug lets hackers take control of your browser
+Who: Anyone using Chrome
+Why: Criminals actively exploiting RIGHT NOW
+Do: Chrome → Settings → Update (2 minutes)
 
 Affects: YOUR MacBook Pro
-Severity: Critical
-Status: Patch available
+Action: [Step-by-step guide with screenshots]
 
-[Step-by-step update guide] [Technical details]
+Context:
+├─ STRIDE: Elevation of Privilege (E)
+├─ MITRE ATT&CK: T1068 (same technique as [recent breach])
+└─ Used in 847 attacks this year
+
+[Simple View] [Technical Details] [Mark Done]
 ```
 
 **Implementation:**
-- GPT-4 API for initial translation
+- GPT-4 API for novel threats
+- Template library for common patterns
 - Human security expert review (quality control)
-- Template-based for common patterns
-- Device-specific action instructions
-- "Simple" vs "Detailed" view toggle
+- User feedback loop (improve over time)
 
-**Quality Target:** 95%+ user comprehension rate (validated via surveys)
+**Target:** 95%+ comprehension rate
 
-**Why this matters:** Our core value proposition - accessibility
+**Why:** Core value prop. Accessibility = market.
 
 ---
 
-#### 4. MITRE ATT&CK Mapping
+### 4. MITRE ATT&CK Context
 
-**What It Is:**
-Industry-standard framework for categorizing attacker techniques.
+**What:** Industry-standard attacker technique framework
 
-**Why We Use It:**
-- ✅ Pre-existing CVE → ATT&CK mappings (saves development time)
-- ✅ Real-world attack data ("used in 847 attacks this year")
-- ✅ 90% industry adoption (SMB users recognize it)
-- ✅ Educational (teaches users about attacker behavior)
-- ✅ Adds urgency ("same technique as MGM breach")
+**Why:**
+- Pre-existing CVE → ATT&CK mappings (saves dev time)
+- Real-world attack data ("used in 847 attacks")
+- 90% industry recognition
+- Educational (teaches user behavior)
+- Adds urgency ("same as MGM breach")
 
-**How We Display It:**
-
+**Display:**
 ```
-Context Panel:
-├─ MITRE ATT&CK: T1555
-├─ Technique: Credentials from Password Stores
-├─ Tactic: Credential Access
-├─ Real-world usage: 847 attacks detected this year
-└─ [Learn more about T1555 →]
+MITRE ATT&CK: T1555
+Technique: Credentials from Password Stores
+Tactic: Credential Access
+Real-world: 847 attacks detected this year
+[Learn more →]
 ```
 
-**Implementation:**
-- Use MITRE CTI repository (open source)
-- Map CVEs to techniques via NVD data
-- Query ATT&CK Navigator for usage statistics
-- Simple lookup, minimal maintenance
-
-**Complexity:** LOW (2-3 days development)
-
-**Why exclusively ATT&CK?**
-- Only framework with CVE mappings already done
-- Only framework with real attack tracking
-- Industry standard - no alternatives match it
+**Why exclusively ATT&CK:** Only framework with CVE mappings + attack tracking
 
 ---
 
-#### 5. STRIDE Threat Categorization
+### 5. STRIDE Threat Categorization
 
-**What It Is:**
-Microsoft's threat categorization framework (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege).
+**What:** Microsoft's 6-category threat framework (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege)
 
-**Why We Use It:**
-- ✅ Simplest threat categorization (only 6 categories)
-- ✅ User-friendly language ("Information Disclosure" = clear)
-- ✅ Complete coverage (all threat types fit S-T-R-I-D-E)
-- ✅ Industry recognition (Microsoft created it, widely taught)
-- ✅ Not phase-based (describes WHAT, not WHEN)
+**Why:**
+- Simplest categorization (6 types, easy to remember)
+- User-friendly ("Information Disclosure" = clear)
+- Complete (all threats fit)
+- Not phase-based (describes WHAT, not WHEN)
 
-**How We Display It:**
+**Examples:**
 
 ```
-Example 1: iPhone Privilege Escalation
+iPhone Vulnerability:
+STRIDE: Elevation of Privilege (E)
+→ Hacker gains admin access
+→ Can access photos, messages, passwords
+Action: Update iPhone NOW
 
-🔴 iPhone Security Update Critical
-
-Threat Type: Elevation of Privilege (E)
-→ Hackers can gain admin access to your device
-→ Can access your photos, messages, passwords
-
-Impact: YOUR iPhone 14 Pro
-Action: Update now (Settings → General → Update)
-
-Context:
-├─ MITRE ATT&CK: T1068 (Exploitation for Privilege Escalation)
-├─ STRIDE: Elevation of Privilege
-└─ Used in 23 active attacks this week
+Ring Doorbell Bug:
+STRIDE: Denial of Service (D)
+→ Device crashes, becomes unresponsive
+→ Won't detect visitors
+Action: Update firmware this week
 ```
 
-```
-Example 2: Ring Doorbell DoS
-
-🟡 Ring Doorbell Vulnerability
-
-Threat Type: Denial of Service (D)
-→ Attacker can overload your doorbell
-→ Device becomes unresponsive/crashes
-→ Won't detect visitors or send alerts
-
-Impact: YOUR Ring Video Doorbell Pro
-Action: Update firmware via Ring app
-
-Context:
-├─ MITRE ATT&CK: T1499 (Endpoint Denial of Service)
-├─ STRIDE: Denial of Service
-└─ Low risk (requires local network access)
-```
-
-**Implementation:**
-
-```python
-stride_mappings = {
-    "T1068": "E",  # Elevation of Privilege
-    "T1555": "I",  # Information Disclosure
-    "T1499": "D",  # Denial of Service
-    "T1557": "S",  # Spoofing (MitM)
-    # Map MITRE techniques to STRIDE categories
-}
-
-explanations = {
-    "E": "Hacker gains admin access → can control everything",
-    "I": "Hacker steals private data → passwords, photos, documents",
-    "D": "Device stops working → becomes unusable",
-    # Device-specific impact explanations
-}
-```
-
-**Complexity:** LOW (3-4 days development)
-
-**Why exclusively STRIDE?**
-- Only framework that categorizes threat TYPES (not processes/phases)
-- DREAD = risk scoring (confusing numbers)
-- Kill Chain = attack phases (timing, not impact)
-- PASTA = modeling process (not categorization)
-- STRIDE = simple, complete, user-friendly
-
-**Why This Matters:**
-Builds trust through transparency - users understand WHY they should care
+**Why exclusively STRIDE:** Only framework that categorizes types in plain language
 
 ---
 
-#### 6. User Onboarding & Device Management
+### 6. User Onboarding (60 seconds to value)
 
-**Signup Flow:**
+**Flow:**
 
 ```
-Step 1: Landing Page
-────────────────────────────────────
+1. Landing Page
+────────────────────────────────
 🛡️ Cyber Threats, Actually Explained
 
-Stop drowning in technical jargon.
-Get threat alerts that matter to YOU.
+[Enter email] →
 
-[Enter your email to start] →
+✓ Free forever (5 devices)
+✓ Only threats affecting YOU
+✓ Plain English, no PhD needed
+────────────────────────────────
 
-✓ Free forever for personal use
-✓ Only alerts for YOUR devices
-✓ Plain English, no tech degree needed
-────────────────────────────────────
+2. Email Verification
+"Check your email for magic link"
 
-Step 2: Email Verification
-"Check your email for verification link"
+3. Device Selection ⭐ CRITICAL STEP
+────────────────────────────────
+What devices should we monitor?
 
-Step 3: Device Selection (THE CRITICAL STEP)
-────────────────────────────────────
-What should we protect?
-
-[Search: Start typing device name...]
-
-Suggestions:
-📱 iPhone 14 Pro
-💻 MacBook Pro M2
-🏠 Ring Video Doorbell
-🌐 Comcast Xfinity Internet
+[Search: iPhone, Windows, Ring...]
 
 Your devices (3):
 ✓ iPhone 14 Pro
 ✓ MacBook Pro M2
 ✓ Ring Video Doorbell
 
-[+ Add more devices] [Continue →]
-────────────────────────────────────
+[+ Add more] [Continue →]
+────────────────────────────────
 
-Step 4: Preferences
+4. Preferences
 Alert frequency:
+● Daily digest (8am, recommended)
 ○ Immediate (critical only)
-● Daily digest (recommended)
 ○ Weekly digest
 
 [Start monitoring →]
 
-Step 5: Confirmation
-✅ You're all set!
-Monitoring 3 devices.
-First digest tomorrow at 8am.
+5. Done
+✅ Monitoring 3 devices
+First digest tomorrow 8am
 
-[View Dashboard] [Invite a friend]
-────────────────────────────────────
+[View Dashboard] [Invite friend]
+────────────────────────────────
 ```
 
-**"Request a Device" Feature:**
+**"Request Device" Feature:**
 ```
-User searches: "Tesla Model 3"
-
-Not in catalog:
-┌─────────────────────────────────┐
-│ 📝 Don't see your device?       │
-│                                 │
-│ Request: Tesla Model 3          │
-│ We'll add it within 1-2 days    │
-│ and notify you.                 │
-│                                 │
-│ [Request this device]           │
-└─────────────────────────────────┘
-
-Backend:
-├─ Add to request queue
-├─ Track # of requests (prioritization)
-├─ Curator adds to catalog
-├─ Auto-email user when added
-└─ User feels heard + valued
+Search: "Tesla Model 3"
+Not found?
+┌─────────────────────────────┐
+│ 📝 Request this device      │
+│ We'll add within 1-2 days   │
+│ [Request] → email when ready│
+└─────────────────────────────┘
 ```
 
-**Why this matters:** Time-to-value = 60 seconds (vs 30 mins for traditional TI platforms)
+**Why:** Time-to-value = 60 seconds (vs 30 minutes for enterprise TI)
 
 ---
 
-#### 7. Daily Digest Email & Alerts
+### 7. Daily Digest Email
 
-**Email Format:**
+**Format:**
 
 ```
 Subject: 🔴 Action Needed: Your iPhone 14 Pro
 
 Hi Sarah,
 
-We detected 2 threats affecting your devices:
+2 threats affect your devices today:
 
-┌─────────────────────────────────────┐
-│ 🔴 CRITICAL: iPhone Zero-Day       │
-│ Affects: Your iPhone 14 Pro         │
-│ Threat: Hackers can access photos   │
-│ Do: Update NOW (5 minutes)          │
-│                                     │
-│ STRIDE: Information Disclosure (I)  │
-│ MITRE: T1005 (Data from Device)     │
-│                                     │
-│ [Update Guide →]                    │
-└─────────────────────────────────────┘
+┌─────────────────────────────────┐
+│ 🔴 CRITICAL: iPhone Zero-Day   │
+│ Affects: Your iPhone 14 Pro     │
+│ Risk: Hackers access photos     │
+│ Do: Update NOW (5 min)          │
+│                                 │
+│ STRIDE: Information Disclosure  │
+│ MITRE: T1005                    │
+│ [Update Guide] [Mark Done]      │
+└─────────────────────────────────┘
 
-┌─────────────────────────────────────┐
-│ 🟡 MEDIUM: Ring Doorbell Update     │
-│ Affects: Your Ring Video Doorbell   │
-│ Threat: Device may crash            │
-│ Do: Update this week                │
-│                                     │
-│ STRIDE: Denial of Service (D)       │
-│ MITRE: T1499 (Endpoint DoS)         │
-│                                     │
-│ [Update Guide →]                    │
-└─────────────────────────────────────┘
+┌─────────────────────────────────┐
+│ 🟡 MEDIUM: Ring Update         │
+│ Affects: Ring Video Doorbell    │
+│ Risk: Device may crash          │
+│ Do: Update this week            │
+│                                 │
+│ STRIDE: Denial of Service       │
+│ [Update Guide] [Snooze 3 days]  │
+└─────────────────────────────────┘
 
-────────────────────────────────────
+────────────────────────────────
 
 Your other devices are safe:
 ✅ MacBook Pro M2 - No threats
-✅ Comcast Xfinity - No threats
 
-[View Dashboard] [Manage Devices] [Unsubscribe]
-
-Stay safe,
-Threat Intelligence Hub
+[Dashboard] [Add Devices] [Settings]
 ```
 
-**Alert Levels:**
-- 🔴 **Critical**: Act within 24 hours (active exploitation)
-- 🟡 **High**: Act this week (patch available, no active exploitation)
-- 🟢 **Medium**: Awareness only (low risk or requires physical access)
-- ℹ️ **Info**: Threat landscape updates (educational)
+**Rules:**
+- Max 5 alerts per email (avoid overwhelm)
+- Critical = immediate email (override digest)
+- Group related ("3 Windows patches" = 1 card)
+- Show "all safe" devices (reassurance)
 
-**Digest Rules:**
-- Maximum 5 alerts per email (avoid overwhelm)
-- Critical alerts: Immediate email (override digest preference)
-- Group related threats ("3 Windows updates" = 1 card)
-- Show "all safe" status for other devices (reassurance)
-
-**Target Metrics:**
-- Email open rate: >40% (industry average = 20%)
-- Click-through rate: >15%
-- Unsubscribe rate: <2%
-
-**Why this matters:** Email = primary engagement channel for free users
+**Target:** 40%+ open rate, 15%+ CTR, <2% unsubscribe
 
 ---
 
-#### 8. Simple Dashboard
+### 8. Dashboard (Adaptive Complexity)
 
-**Dashboard Structure:**
+**Simple View** (Default for Free):
 
 ```
-┌─────────────────────────────────────────────────┐
-│  🛡️ TIH         [Search]      👤 Sarah  [Menu] │
-├─────────────────────────────────────────────────┤
-│                                                 │
-│  [📊 Overview] [🎯 My Devices] [🚨 Alerts]     │
-│  [📖 Learn]    [⚙️ Settings]                   │
-│                                                 │
-│  ┌───────────────────────────────────────────┐ │
-│  │         Overview Tab (Default)            │ │
-│  │                                           │ │
-│  │  Your Threat Level: 🟢 LOW               │ │
-│  │  Last checked: 2 hours ago                │ │
-│  │                                           │ │
-│  │  📱 YOUR DEVICES (3)                      │ │
-│  │  ─────────────────────────────────────   │ │
-│  │  🟢 iPhone 14 Pro - Safe                 │ │
-│  │  🟡 MacBook Pro M2 - 1 update pending    │ │
-│  │  🟢 Ring Doorbell - Safe                 │ │
-│  │                                           │ │
-│  │  [+ Add Device]                           │ │
-│  │                                           │ │
-│  │  🚨 ALERTS FOR YOU (1)                    │ │
-│  │  ─────────────────────────────────────   │ │
-│  │  🟡 MacBook Software Update Available     │ │
-│  │     STRIDE: Elevation of Privilege (E)    │ │
-│  │     MITRE: T1068                          │ │
-│  │     Do: Update macOS (15 mins)            │ │
-│  │     [View Details →] [Mark Done]          │ │
-│  │                                           │ │
-│  │  📰 THREAT LANDSCAPE                      │ │
-│  │  ─────────────────────────────────────   │ │
-│  │  This week in cybersecurity:              │ │
-│  │  • Ransomware: ↑ 12%                     │ │
-│  │  • Phishing: ↓ 5%                        │ │
-│  │  • Zero-days: 3 discovered               │ │
-│  │                                           │ │
-│  │  💡 Want to protect your business?        │ │
-│  │     [Upgrade to TIH for Teams →]          │ │
-│  │                                           │ │
-│  └───────────────────────────────────────────┘ │
-│                                                 │
-└─────────────────────────────────────────────────┘
+┌─────────────────────────────────┐
+│ 🛡️ TIH    [Search]    👤 Sarah │
+├─────────────────────────────────┤
+│                                 │
+│ Your Threat Level: 🟢 LOW      │
+│ Last checked: 2 hours ago       │
+│                                 │
+│ 📱 YOUR DEVICES (3)             │
+│ ────────────────────────────── │
+│ 🟢 iPhone 14 Pro - Safe        │
+│ 🟡 MacBook Pro - 1 alert       │
+│ 🟢 Ring Doorbell - Safe        │
+│                                 │
+│ [+ Add Device]                  │
+│                                 │
+│ 🚨 ALERTS (1)                   │
+│ ────────────────────────────── │
+│ 🟡 MacBook Update Available     │
+│    STRIDE: Elevation (E)        │
+│    MITRE: T1068                 │
+│    [View] [Mark Done]           │
+│                                 │
+│ 📰 THREAT LANDSCAPE             │
+│ This week:                      │
+│ • Ransomware: ↑ 12%            │
+│ • Phishing: ↓ 5%               │
+│ • Zero-days: 3                  │
+│                                 │
+│ 💡 Protect your business?       │
+│    [Upgrade to Teams →]         │
+│                                 │
+└─────────────────────────────────┘
 ```
 
-**Adaptive Complexity Toggle:**
-```
-Top-right corner: [Simple ▼] ⟷ [Detailed ▼] ⟷ [Expert ▼]
+**Toggle:** `[Simple ▼] ⟷ [Detailed ▼] ⟷ [Expert ▼]`
 
-Simple Mode (Default for Free):
-├─ Hide technical jargon
-├─ Show only "What" and "Do"
-├─ Color-coded indicators
-└─ One-click actions
+- Simple: What + Do (hide jargon)
+- Detailed: + MITRE/STRIDE context, filters
+- Expert: + Technical data, API docs
 
-Detailed Mode (Default for SMB):
-├─ Show MITRE/STRIDE context
-├─ Filtering and sorting options
-├─ Team assignment features
-└─ Export capabilities
-
-Expert Mode (Default for MSP):
-├─ All technical data visible
-├─ Advanced analytics
-├─ API documentation links
-└─ Multi-tenant controls
-```
-
-**Why this matters:** Same UI for all tiers = zero friction upgrades
+**Why:** Same UI for all tiers = zero friction upgrades
 
 ---
 
-#### 9. Authentication & User Management
+### 9. Proof Tracking ⭐ NEW
 
-**MVP Authentication:**
-- OAuth via Auth0 or Okta (don't build custom IdP)
+**Problem:** No one tracks if users actually patched
+
+**Solution:** Action tracking with verification
+
+**Flow:**
+```
+1. Alert sent: "Update iPhone"
+
+2. User clicks: "Mark as Done"
+   └─ Timestamp: Nov 12, 2025, 3:42pm
+   └─ User: Sarah
+   └─ Status: Claimed patched
+
+3. 48-hour follow-up email:
+   "Did you actually update your iPhone?"
+   [Yes, updated] [No, still pending] [N/A for me]
+
+4. Report generation:
+   ┌─────────────────────────────┐
+   │ Threat Response Summary     │
+   ├─────────────────────────────┤
+   │ Alerts sent: 15             │
+   │ Patched: 12 (80%)           │
+   │ Pending: 2 (13%)            │
+   │ Not applicable: 1 (7%)      │
+   │                             │
+   │ Avg time to patch: 18 hours │
+   │ Compliance: 93%             │
+   └─────────────────────────────┘
+
+   [Export for Audit] [Share with Team]
+```
+
+**Why this matters:**
+- ✅ Accountability (users track their own progress)
+- ✅ Compliance evidence (audit trail for SMBs/NGOs)
+- ✅ Engagement (gamification, completion rates)
+- ✅ Differentiation (no competitor does this for consumers)
+
+**Implementation:**
+- Simple database table: `user_actions (alert_id, user_id, action, timestamp)`
+- Email follow-up job (Celery task)
+- Report generator (export to PDF/CSV)
+
+---
+
+### 10. Authentication & RBAC
+
+**MVP Auth:**
+- Auth0 or Okta (OAuth/SSO)
 - Email/password signup
-- Google/Apple SSO
+- Google/Apple social login
 - Email verification required
-- Password reset flow
 
-**User Profile:**
+**Tiers:**
 ```
-User account stores:
-├─ Email (primary identifier)
-├─ Tier (free, pro, smb, msp, enterprise)
-├─ Device inventory (linked to device catalog)
-├─ Alert preferences (frequency, severity threshold)
-├─ Notification channels (email, future: SMS/push)
-└─ UI preferences (simple/detailed/expert mode)
+Free: 5 devices, daily digest, basic dashboard
+Pro ($4.99/mo): Unlimited devices, instant alerts, priority
+SMB ($49/mo): Team accounts (25), device assignment, reports
+MSP ($499/mo): Multi-tenant, white-label, API access
 ```
 
-**Access Control (RBAC):**
-```
-Free Tier:
-├─ 5 devices max
-├─ Daily digest only
-├─ Basic dashboard
-└─ Community features
+---
 
-Pro Tier ($4.99/mo):
-├─ Unlimited devices
-├─ Instant critical alerts
-├─ Advanced dashboard
-└─ Priority translation
+## ❌ EXCLUSIONS: What We're NOT Building
 
-SMB Tier ($49/mo):
-├─ Team member accounts (up to 25)
-├─ Device assignment
-├─ Compliance reports
-└─ Team collaboration features
+### Cut from MVP (Avoid Scope Creep)
 
-MSP Tier ($499/mo):
-├─ Multi-tenant management
-├─ Unlimited team members
-├─ API access
-└─ White-label options
-```
+**1. ❌ GRC Compliance Tracking**
+- Not: Full compliance management, evidence collection, audit trails
+- But: Show context ("Maps to ISO 27001 A.12.6.1" - informational only)
+- Why: 18-24 month dev, different market, ServiceNow already dominates
 
-**Why this matters:** Foundation for monetization and scale
+**2. ❌ Automated Remediation**
+- Not: Auto-patch deployment, endpoint management integration
+- But: Clear manual instructions with screenshots
+- Why: Liability risk, requires agents, SIEM/SOAR territory
+
+**3. ❌ Custom IdP**
+- Not: Build our own auth provider
+- But: Use Auth0/Okta
+- Why: Not our expertise, security risk, 6+ month delay
+
+**4. ❌ SLA Tracking**
+- Not: Ticket system, time-to-resolution, escalation workflows
+- But: Manual "Assign to" and "Mark Done"
+- Why: ITSM territory, premature for MVP
+
+**5. ❌ Executive Dashboards**
+- Not: Board-level risk summaries, C-suite reporting
+- But: Focus on doers (individuals, IT managers)
+- Why: Not our target audience yet
+
+**6. ❌ 20,000 Device Catalog**
+- Not: Every device ever made
+- But: 100 popular devices (80% coverage)
+- Why: Unsustainable, 6-12 month delay, diminishing returns
+
+**7. ❌ STIX/TAXII Export (MVP)**
+- Not: Full threat feed server, SIEM integrations
+- But: Add when 5+ enterprise customers request it
+- Why: No MVP users need it, premature optimization
+
+**8. ❌ Mobile Native Apps**
+- Not: iOS/Android apps
+- But: Responsive mobile web
+- Why: 2x dev cost, validate PMF first
+
+**9. ❌ Real-Time Alerts**
+- Not: Instant push notifications, WebSockets
+- But: Daily digest + critical override
+- Why: Most threats aren't time-critical, daily is sufficient
+
+**10. ❌ Car Threat Intelligence**
+- Not: Tesla, Toyota, Ford models
+- But: Maybe Tesla as generic entry if requested
+- Why: 5-10 CVEs/year (vs 100+ for phones), non-actionable
 
 ---
 
-## ❌ EXCLUSIONS: What We're NOT Building (And Why)
+## ⏭️ NEXT: Post-MVP (Customer-Driven)
 
-### Explicitly Cut from MVP
+*Build these ONLY if customers demand (10+ requests):*
 
-#### 1. ❌ GRC Compliance Tracking
+### Potential Features
 
-**What it would be:**
-- Full compliance management system
-- Evidence collection and audit trails
-- Policy management workflows
-- Risk scoring and quantification
-- Executive compliance dashboards
+- **Proof Tracking enhancements:** Screenshot verification, device state checks
+- **Team collaboration:** Comments on alerts, shared workspace
+- **Advanced analytics:** Threat trends, industry-specific intel
+- **Integrations:** Slack/Teams notifications, webhooks
+- **Enhanced personalization:** Geolocation threats, tech stack profiling
+- **PWA:** Progressive Web App for mobile
+- **API access:** REST API, rate limiting
+- **STIX/TAXII:** Manual export → Full TAXII server
+- **Educational content:** Threat library, best practices
+- **Compliance expansion:** NIST, CIS framework mappings
 
-**Why we're NOT building it:**
-- **Complexity:** 18-24 months of development
-- **Different market:** GRC tools target compliance officers, not threat intel consumers
-- **Strong competitors:** ServiceNow, Archer, LogicGate ($100M+ funded)
-- **Scope creep:** Would dilute core value proposition
-- **Not our expertise:** GRC is specialized domain
-
-**What we DO instead:**
-- Show contextual info only: "Maps to ISO 27001 A.12.6.1"
-- Informational, not tracking
-- Helps users understand impact without becoming GRC tool
+**Decision criteria:**
+- 10+ customers asking
+- Serves >30% of users
+- Unlocks new revenue segment
+- Competitors shipping it
 
 ---
 
-#### 2. ❌ SLA Tracking & Performance Metrics
-
-**What it would be:**
-- Ticket tracking system
-- Time-to-resolution metrics
-- SLA breach alerting
-- Team performance analytics
-- Escalation workflows
-
-**Why we're NOT building it:**
-- **Belongs in CTEM module:** Not threat intelligence core
-- **ITSM territory:** ServiceNow, Jira Service Management do this
-- **Premature:** No customers demanding it yet
-- **Overhead:** Requires integration with calendar, scheduling, ticketing
-
-**What we DO instead:**
-- Manual "Assign to team member" (SMB tier)
-- Manual "Mark as done"
-- No automated tracking in MVP
-- Add later if customers demand it
-
----
-
-#### 3. ❌ Automated Remediation & Mitigation
-
-**What it would be:**
-- Automatic patch deployment
-- Integration with endpoint management tools
-- Automated configuration changes
-- Remediation playbooks execution
-- IdP integration for access control
-
-**Why we're NOT building it:**
-- **Liability risk:** Breaking user systems = lawsuits
-- **Requires agents:** Software installation on user devices
-- **SIEM/SOAR territory:** Not our job
-- **Complexity:** Each device type needs custom remediation
-- **Trust barrier:** Users won't let us auto-patch their devices
-
-**What we DO instead:**
-- Provide clear manual instructions
-- Link to vendor patch guides
-- Show step-by-step screenshots
-- Future: Integrate with SIEM/SOAR (they handle remediation)
-
----
-
-#### 4. ❌ Custom Identity Provider (IdP)
-
-**What it would be:**
-- OAuth/SAML authentication provider
-- User directory management
-- Single Sign-On (SSO) for enterprise
-- Multi-factor authentication (MFA)
-- Session management
-
-**Why we're NOT building it:**
-- **Not our core competency:** Identity is specialized field
-- **Security risk:** One breach = company dead
-- **Strong alternatives:** Auth0, Okta, Supabase ($1B+ companies)
-- **Maintenance burden:** Compliance, audits, certifications
-- **Scope creep:** Would delay MVP by 6+ months
-
-**What we DO instead:**
-- Use Auth0 or Okta for authentication
-- Focus on threat intelligence (our expertise)
-- Let identity experts handle identity
-
----
-
-#### 5. ❌ Executive/Board Member Dashboards
-
-**What it would be:**
-- High-level risk summaries
-- Trend analysis and reporting
-- Board presentation templates
-- Risk quantification ($$ impact)
-- Strategic security posture views
-
-**Why we're NOT building it:**
-- **Not our target audience:** Executives aren't our MVP users
-- **Different needs:** They want risk narrative, not threat details
-- **Premature:** Need operational users first
-- **Specialized reporting:** Requires BI tools, custom analytics
-
-**What we DO instead:**
-- Focus on doers (individuals, IT managers, analysts)
-- Executives can view dashboards if they want
-- Not optimized for them initially
-- Add later if enterprise tier demands it
-
----
-
-#### 6. ❌ Comprehensive Device Catalog (20,000+ devices)
-
-**What it would be:**
-- Every phone model ever made (1000+)
-- Every computer model (2000+)
-- All IoT devices (5000+)
-- All cars (500+)
-- All network gear (1000+)
-- All SaaS products (10,000+)
-
-**Why we're NOT building it:**
-- **Unsustainable:** 2-3 FTE employees just for data entry
-- **Delays launch:** 6-12 months before MVP
-- **Diminishing returns:** Long tail has low volume
-- **Maintenance nightmare:** Constant updates needed
-
-**What we DO instead:**
-- Start with 100 popular devices (covers 80% of users)
-- Add "Request a Device" feature
-- Prioritize by user demand (data-driven)
-- Crowdsourced catalog building
-- Scale naturally with user growth
-
----
-
-#### 7. ❌ STIX/TAXII Export (MVP)
-
-**What it would be:**
-- Convert threat data to STIX 2.1 format
-- TAXII server for automated feeds
-- Integration testing with SIEMs
-- Documentation for each integration
-- Support for custom STIX objects
-
-**Why we're deferring (not excluding forever):**
-- **No users need it yet:** Enterprise feature, not consumer
-- **Integration overhead:** Each SIEM has quirks
-- **Premature optimization:** Build when customers pay for it
-- **Complexity:** 2-3 weeks development + ongoing support
-
-**When we ADD it:**
-- Trigger: 5+ enterprise customers requesting it
-- Build API endpoint, not full TAXII server initially
-- Let customers pull data via API first
-
----
-
-#### 8. ❌ Mobile Native Apps (MVP)
-
-**What it would be:**
-- iOS app (Swift)
-- Android app (Kotlin)
-- Push notifications
-- Offline support
-- App store presence
-
-**Why we're deferring:**
-- **Mobile web is sufficient:** Responsive design works on phones
-- **Development cost:** 2x engineering effort (iOS + Android)
-- **Maintenance burden:** App store reviews, OS updates
-- **Premature:** Validate product-market fit first
-
-**When we ADD it:**
-- If mobile web usage >40% and users complain
-- When we have 5,000+ users
-- After MVP proves value
-
----
-
-#### 9. ❌ Real-Time Alerts (MVP)
-
-**What it would be:**
-- Instant push notifications
-- Real-time threat monitoring
-- WebSocket connections
-- Sub-minute alert delivery
-
-**Why we're deferring:**
-- **Daily digest is sufficient:** Most threats aren't time-critical
-- **Infrastructure cost:** Real-time = always-on servers
-- **Battery drain:** Push notifications annoy users
-- **Premature:** Validate engagement first
-
-**What we DO instead:**
-- Daily digest (8am default)
-- Critical threats: Immediate email (override digest)
-- Good enough for 95% of use cases
-
----
-
-#### 10. ❌ Car Threat Intelligence (MVP)
-
-**What it would be:**
-- Tesla, Toyota, Ford, etc. models
-- Automotive CVE tracking
-- Vehicle-specific threats
-- OTA update monitoring
-
-**Why we're excluding:**
-- **Low CVE volume:** Cars get 5-10 CVEs/year (vs phones = 100+/year)
-- **Non-actionable:** Users can't patch cars (dealer visit required)
-- **Niche audience:** Most users don't think "cyber threat + my car"
-- **Complex matching:** VIN-level specifics, trim levels
-
-**Exception:**
-- Add Tesla as generic entry (software-first car)
-- If users request cars heavily, reconsider
-- Focus on high-CVE device categories first
-
----
-
-### Summary: Focus on Core Mission
-
-**We ARE building:**
-✅ Best threat intelligence platform for normal people
-✅ Noise-free, personalized, plain English
-✅ MITRE ATT&CK + STRIDE context
-✅ Device-based filtering
-
-**We are NOT building:**
-❌ GRC tool
-❌ SIEM replacement
-❌ Remediation engine
-❌ ITSM ticketing system
-❌ Identity provider
-❌ Executive reporting suite
-
-**Why this matters:** Focused products win. Diluted products fail.
-
----
-
-## ⏭️ NEXT: Post-MVP Enhancements
-
-*These features are under consideration for post-MVP development. Prioritization will be driven by customer demand and usage data. Details will be finalized through dedicated planning sessions.*
-
-### Potential Features (Not Yet Finalized)
-
-#### Team Collaboration Features
-- Real-time collaboration on threat investigation
-- Commenting system on alerts
-- Shared investigation workspace
-- Team activity feed
-
-#### Advanced Analytics
-- Threat trend analysis
-- Industry-specific threat intelligence
-- Predictive threat modeling
-- Custom dashboards and reporting
-
-#### Integration Capabilities
-- Slack/Teams notifications
-- SIEM/SOAR connectors (basic)
-- Webhook support
-- Email forwarding rules
-
-#### Enhanced Personalization
-- Industry-specific filtering
-- Geolocation-based threats
-- Technology stack profiling
-- Custom alert rules
-
-#### Mobile Experience
-- Progressive Web App (PWA)
-- Push notifications
-- Offline alert viewing
-- Mobile-optimized workflows
-
-#### API Access (Basic)
-- REST API for threat queries
-- API key management
-- Rate limiting
-- Basic documentation
-
-#### STIX/TAXII Export
-- STIX 2.1 format export
-- Manual export initially
-- TAXII server if demand exists
-- Integration testing with major SIEMs
-
-#### Educational Content
-- Threat explanation library
-- Security best practices guides
-- Interactive tutorials
-- Glossary of terms
-
-#### Compliance Context Expansion
-- More framework mappings (NIST, CIS)
-- Control gap identification (informational only)
-- Compliance impact summaries
-- Audit-ready reports
-
-**Decision Criteria for NEXT Phase:**
-- Customer requests (minimum 10 customers asking)
-- Usage data (feature would serve >30% of users)
-- Competitive pressure (competitors shipping it)
-- Revenue impact (unlocks new customer segment)
-
-**Note:** We will not build features speculatively. Each NEXT feature requires validation before development.
-
----
-
-## 🔮 LATER: Future Vision
-
-*These are long-term possibilities, not commitments. Each would require significant planning, customer validation, and resource allocation. Many may never be built.*
-
-### Potential Future Modules
-
-#### CTEM (Continuous Threat Exposure Management) Module
-- Asset discovery and inventory
-- Attack surface monitoring
-- Vulnerability prioritization
-- Exposure validation testing
-- **Note:** This is a separate product category. Only build if we have strong customer demand and dedicated team.
-
-#### GRC Engineering Module
-- Full compliance management
-- Control mapping and tracking
-- Evidence collection
-- Risk quantification
-- **Note:** Different market segment. Would require specialized GRC expertise.
-
-#### MSP White-Label Platform
-- Branded portals for MSPs
-- Custom domain support
-- Multi-tenant architecture
-- Billing integration
-- **Note:** Only if MSP tier shows strong traction.
-
-#### Threat Intelligence Marketplace
-- Community-contributed threat feeds
-- Vendor partnerships
-- Commercial feed integrations
-- Revenue sharing model
-- **Note:** Requires large user base (100,000+) to be viable.
-
-#### Advanced Remediation Workflows
-- Integration with patch management tools
-- Automated remediation playbooks
-- Change management integration
-- Rollback capabilities
-- **Note:** High liability, requires mature product and legal review.
-
-#### AI-Powered Threat Hunting
-- Anomaly detection in user environments
-- Predictive threat intelligence
-- Custom ML models per organization
-- Automated threat correlation
-- **Note:** Requires significant data science expertise and infrastructure.
-
-### Expansion Opportunities
-
-- **Geographic expansion:** Localized threat intelligence for EU, APAC regions
-- **Vertical specialization:** Healthcare-specific, financial services-specific builds
-- **Enterprise features:** On-premise deployment, air-gapped environments
-- **Developer tools:** SDK for custom integrations, threat intelligence API platform
-- **Training/Certification:** Security awareness training based on real threats
-
-**Decision Criteria for LATER Phase:**
-- Product-market fit proven (>$1M ARR)
-- Engineering team scaled (>10 engineers)
-- Market opportunity validated (>$10M TAM)
-- Strategic acquisition targets identified
-
-**Important:** These are possibilities, not plans. Most will not be built. Focus remains on core mission.
+## 🔮 LATER: Future Vision (Speculative)
+
+*Long-term possibilities if product-market fit proven:*
+
+- **CTEM Module:** Attack surface monitoring, exposure validation
+- **GRC Module:** Full compliance tracking (separate product)
+- **MSP Platform:** White-label, multi-tenant architecture
+- **TI Marketplace:** Community feeds, vendor partnerships
+- **AI Threat Hunting:** Anomaly detection, predictive intel
+- **Geographic expansion:** EU/APAC localization
+- **Vertical specialization:** Healthcare, FinServ builds
+- **Training/Certification:** Security awareness programs
+
+**Trigger:** $1M+ ARR, 10+ engineers, validated TAM
 
 ---
 
 ## 🏗️ Technical Architecture
 
-### System Overview
-
 ```
-┌─────────────────────────────────────────────────┐
-│              FRONTEND (GCP Hosted)               │
-│  React/Next.js - Consumer-friendly UI           │
-│  - Landing page + signup flow                   │
-│  - Device onboarding wizard                     │
-│  - Dashboard (adaptive complexity)              │
-│  - Alert management                             │
-└────────────────┬────────────────────────────────┘
-                 │ HTTPS/REST
-┌────────────────▼────────────────────────────────┐
-│            BACKEND API (FastAPI)                 │
-│  Python 3.11+ - High-performance async API      │
-│                                                  │
-│  Modules:                                       │
-│  ├─ User Management (auth, profiles, prefs)    │
-│  ├─ Device Inventory (CRUD, catalog search)    │
-│  ├─ Threat Matching Engine (core logic)        │
-│  ├─ Translation Service (GPT-4 integration)    │
-│  ├─ Alert Generator (personalization)          │
-│  ├─ Email Service (SendGrid integration)       │
-│  └─ Analytics (usage tracking)                  │
-└────────────────┬────────────────────────────────┘
-                 │
-┌────────────────▼────────────────────────────────┐
-│        THREAT INTELLIGENCE LAYER                 │
-│                                                  │
-│  MISP or OpenCTI (Open Source):                 │
-│  ├─ Feed ingestion (5-10 sources)              │
-│  ├─ Deduplication & normalization               │
-│  ├─ CVE/CPE extraction                          │
-│  ├─ MITRE ATT&CK mapping                        │
-│  └─ Threat scoring                              │
-│                                                  │
-│  Custom Enhancements:                           │
-│  ├─ Device catalog integration                  │
-│  ├─ STRIDE categorization                       │
-│  └─ Relevance scoring algorithm                 │
-└────────────────┬────────────────────────────────┘
-                 │
-┌────────────────▼────────────────────────────────┐
-│           DATA LAYER (PostgreSQL)                │
-│  GCP Cloud SQL - Managed PostgreSQL             │
-│                                                  │
-│  Core Tables:                                   │
-│  ├─ users (auth, tier, preferences)            │
-│  ├─ user_devices (inventory)                   │
-│  ├─ device_catalog (100 devices → scalable)    │
-│  ├─ threats (processed intel)                   │
-│  ├─ threat_device_matches (relevance map)      │
-│  ├─ alerts (queued notifications)              │
-│  └─ user_actions (mark done, feedback)         │
-│                                                  │
-│  Indices:                                       │
-│  ├─ user_devices.user_id                       │
-│  ├─ device_catalog.cpe_patterns (GIN)         │
-│  ├─ threats.published_date                      │
-│  └─ Full-text search on threats                 │
-└──────────────────────────────────────────────────┘
+┌─────────────────────────────────┐
+│ FRONTEND (React/Next.js)        │
+│ - Landing + signup               │
+│ - Device onboarding wizard       │
+│ - Adaptive dashboard             │
+│ - Alert management               │
+└──────────┬──────────────────────┘
+           │ REST API
+┌──────────▼──────────────────────┐
+│ BACKEND API (FastAPI/Python)    │
+│ - User management                │
+│ - Device inventory               │
+│ - Threat matching engine ⭐      │
+│ - Translation service (GPT-4)    │
+│ - Alert generator                │
+│ - Email service (SendGrid)       │
+│ - Proof tracking ⭐               │
+└──────────┬──────────────────────┘
+           │
+┌──────────▼──────────────────────┐
+│ THREAT INTEL (MISP/OpenCTI)     │
+│ - Feed ingestion (5-10 sources) │
+│ - Deduplication                  │
+│ - CVE/CPE extraction             │
+│ - MITRE ATT&CK mapping           │
+│ - STRIDE categorization          │
+└──────────┬──────────────────────┘
+           │
+┌──────────▼──────────────────────┐
+│ DATABASE (PostgreSQL + Redis)   │
+│ - users, devices, threats        │
+│ - threat_device_matches          │
+│ - alerts, user_actions           │
+│ - Cache + job queue (Redis)      │
+└──────────────────────────────────┘
 
-┌──────────────────────────────────────────────────┐
-│              EXTERNAL SERVICES                    │
-├──────────────────────────────────────────────────┤
-│  Auth: Auth0/Okta (authentication)              │
-│  Email: SendGrid (transactional emails)         │
-│  Translation: OpenAI GPT-4 API                  │
-│  Storage: GCP Cloud Storage (assets)            │
-│  Monitoring: GCP Cloud Monitoring               │
-│  Logging: GCP Cloud Logging                     │
-└──────────────────────────────────────────────────┘
+External Services:
+├─ Auth: Auth0/Okta
+├─ Email: SendGrid
+├─ Translation: OpenAI GPT-4
+├─ Hosting: GCP Cloud Run
+└─ Storage: GCP Cloud SQL
 ```
 
-### Data Flow: New Threat → User Alert
+### Tech Stack
 
-```
-1. INGESTION
-   MISP ingests threat from feeds
-   ↓
-2. PROCESSING
-   Extract CVE, CPE, vendor, product
-   Map to MITRE ATT&CK technique
-   ↓
-3. DEVICE MATCHING
-   Query device_catalog for CPE matches
-   Find all devices affected by threat
-   ↓
-4. USER MATCHING
-   Query user_devices for affected devices
-   Generate list of impacted users
-   ↓
-5. PERSONALIZATION
-   For each user:
-   ├─ Generate plain English summary (GPT-4)
-   ├─ Add STRIDE categorization
-   ├─ Add MITRE context
-   ├─ Create device-specific action steps
-   └─ Calculate severity for THIS user
-   ↓
-6. ALERT QUEUEING
-   Add to alerts table
-   Respect user preferences (digest vs immediate)
-   ↓
-7. DELIVERY
-   Daily digest job (8am user timezone)
-   OR immediate email (critical threats)
-   ↓
-8. USER ACTION
-   User opens email → clicks link → views dashboard
-   Marks alert as done OR assigns to team
-   Feedback loop → improve translations
-```
-
-### Technology Stack
-
-**Frontend:**
-- React 18+ or Next.js 14+
-- TypeScript
-- Tailwind CSS (styling)
-- React Query (data fetching)
-- Chart.js or Recharts (visualizations)
-
-**Backend:**
-- Python 3.11+
-- FastAPI (async web framework)
-- SQLAlchemy (ORM)
-- Pydantic (validation)
-- Celery (background jobs)
-- Redis (caching, job queue)
-
-**Database:**
-- PostgreSQL 15+ (primary database)
-- Redis 7+ (cache, sessions, queues)
-
-**Threat Intelligence:**
-- MISP 2.4+ OR OpenCTI 5.0+
-- MITRE ATT&CK CTI repository
-
-**Infrastructure:**
-- GCP Cloud Run (serverless backend)
-- GCP Cloud SQL (managed PostgreSQL)
-- GCP Cloud Storage (file storage)
-- GCP Cloud Build (CI/CD)
-- GCP Cloud Monitoring (observability)
-
-**External Services:**
-- Auth0 or Okta (authentication)
-- SendGrid (email delivery)
-- OpenAI GPT-4 API (translation)
-
-### Scalability Considerations
-
-**Horizontal Scaling:**
-- Stateless API (scales with Cloud Run)
-- Database read replicas (when needed)
-- Redis cluster (when needed)
-- CDN for frontend assets
-
-**Performance Targets:**
-- API response time: <200ms (p95)
-- Dashboard load time: <2 seconds
-- Email delivery: <5 minutes from trigger
-- Daily digest generation: <30 minutes for 10,000 users
-
-**Cost Optimization:**
-- Cloud Run scales to zero (no idle costs)
-- Batch translation jobs (reduce API calls)
-- Cache common queries (Redis)
-- Compress email templates
-
----
-
-## 🎯 Why STRIDE and MITRE ATT&CK?
-
-### Why STRIDE for Threat Categorization?
-
-**STRIDE = Simplest, most recognized threat categorization framework**
-
-**Alternatives Considered:**
-- ❌ **DREAD** - Risk scoring system (gives numbers like "8/10", confuses users)
-- ❌ **PASTA** - Threat modeling PROCESS (not categorization)
-- ❌ **Kill Chain** - Attack PHASES (reconnaissance → exploitation, describes timing not impact)
-- ❌ **LINDDUN** - Privacy-focused only (too narrow, doesn't cover all threat types)
-
-**Why STRIDE Wins:**
-1. ✅ **Simple:** Only 6 categories (S-T-R-I-D-E), easy to remember
-2. ✅ **Complete:** Covers ALL threat types, nothing falls outside
-3. ✅ **User-friendly:** "Information Disclosure" is clear to non-technical users
-4. ✅ **Industry standard:** Microsoft created it, widely taught in security courses
-5. ✅ **Not phase-based:** Describes WHAT the threat does, not WHEN it happens
-6. ✅ **Maps to impact:** Each category directly explains user harm
-
-**Example Comparison:**
-
-```
-Same iPhone vulnerability explained:
-
-Using STRIDE:
-"Information Disclosure (I) - Hackers can steal your passwords"
-→ User understands immediately
-
-Using DREAD:
-"Damage: 9, Reproducibility: 10, Exploitability: 7..."
-→ User confused by numbers
-
-Using Kill Chain:
-"Exploitation phase"
-→ User doesn't understand impact
-```
-
-**Bottom Line:** STRIDE is the ONLY framework that categorizes threat TYPES in simple, user-friendly language.
-
----
-
-### Why MITRE ATT&CK for Technique Mapping?
-
-**MITRE ATT&CK = Only framework with CVE mappings and real attack data**
-
-**Alternatives Considered:**
-- ❌ **Cyber Kill Chain** - Only 7 phases (too broad, "Weaponization" not specific)
-- ❌ **Diamond Model** - Academic framework (Adversary-Infrastructure-Capability-Victim, not operational)
-- ❌ **CAPEC** - Attack pattern database (500+ patterns, too granular, no CVE mappings)
-- ❌ **Unified Kill Chain** - Extended kill chain with 18 phases (overcomplicated)
-
-**Why MITRE ATT&CK Wins:**
-1. ✅ **Pre-existing CVE mappings:** NVD and threat feeds already map CVEs to ATT&CK (saves us work)
-2. ✅ **Real-world attack data:** Can say "T1555 used in 847 attacks this year" (builds urgency)
-3. ✅ **90% industry adoption:** SMB users already heard of it from security vendors
-4. ✅ **Actively maintained:** MITRE updates quarterly with new techniques
-5. ✅ **Specific techniques:** T1555 = "Credentials from Password Stores" (actionable)
-6. ✅ **Free and open:** No licensing, community-maintained
-7. ✅ **Tool integration:** SIEMs, SOARs, EDRs all use ATT&CK (future integration path)
-
-**Example Comparison:**
-
-```
-Same vulnerability:
-
-Using ATT&CK:
-"T1555 - Credentials from Password Stores
-Used in 847 attacks this year
-Same technique as LastPass breach"
-→ Specific, searchable, shows real danger
-
-Using Kill Chain:
-"Actions on Objectives phase"
-→ Vague, no specificity, no urgency
-
-Using CAPEC:
-"CAPEC-560: Use of Known Domain Credentials"
-→ Too granular, users don't know CAPEC, no tooling support
-```
-
-**Bottom Line:** MITRE ATT&CK is THE industry standard. Everyone uses it. CVEs already mapped to it. No alternatives come close.
-
----
-
-### Why Not Use Multiple Frameworks?
-
-**We considered showing multiple frameworks:**
-- STRIDE + ATT&CK + Kill Chain + CAPEC
-
-**Why we rejected this:**
-- ❌ Confuses users (framework overload)
-- ❌ No added value (redundant information)
-- ❌ Maintenance burden (multiple mappings to maintain)
-- ❌ Clutters UI (too much context)
-
-**Our Decision:**
-- STRIDE alone covers all threat TYPES (complete)
-- ATT&CK alone covers all attacker TECHNIQUES (complete)
-- Two frameworks complement each other perfectly:
-  - STRIDE = "What type?" (Information Disclosure)
-  - ATT&CK = "How executed?" (T1555 - Password store theft)
-
-**Together they answer:**
-1. What is this threat? (STRIDE category)
-2. What does it mean to me? (STRIDE explanation)
-3. How do attackers use it? (ATT&CK technique)
-4. Is this serious? (ATT&CK real-world usage stats)
-
-**This is sufficient. Adding more frameworks = diminishing returns.**
-
----
-
-## 🏆 Competitive Advantages
-
-### Our Moats (What Competitors Can't Easily Replicate)
-
-#### 1. Translation Quality + Domain Expertise
-- **What:** Plain English translations reviewed by security experts
-- **Why it's defensible:** Quality takes time, can't be bought, requires domain expertise
-- **Moat strength:** 8/10 (takes 12+ months to match quality)
-
-#### 2. Device Catalog + Matching Algorithm
-- **What:** Curated database of devices with CPE mappings and relevance scoring
-- **Why it's defensible:** Labor-intensive curation, requires constant updates, proprietary matching logic
-- **Moat strength:** 7/10 (takes 6+ months to build comparable catalog)
-
-#### 3. User Habituation
-- **What:** Daily digest creates habit (like checking news), high engagement = high retention
-- **Why it's defensible:** Habits take months to form, switching cost = breaking habit
-- **Moat strength:** 9/10 (strongest moat, but takes time to build)
-
-#### 4. Network Effects (Future)
-- **What:** More users → better device data → better matching → more users
-- **Why it's defensible:** Flywheel effect, first-mover advantage
-- **Moat strength:** 6/10 currently (needs user base to activate)
-
-#### 5. STRIDE + ATT&CK Contextualization
-- **What:** Only platform explaining threats via both frameworks for consumers
-- **Why it's defensible:** Requires security domain expertise + product design skill
-- **Moat strength:** 7/10 (unique positioning, but technically replicable)
-
-### Competitive Positioning
-
-**We are NOT competing with:**
-- ❌ Enterprise TI Platforms (Recorded Future, Anomali, ThreatConnect) - Different audience
-- ❌ Open Source TIPs (MISP, OpenCTI) - Different user (we USE these as backend)
-- ❌ SIEM/SOAR Platforms (Splunk, Sentinel) - Different job-to-be-done
-- ❌ Antivirus/EDR (Norton, CrowdStrike) - Different layer (we're intel, not protection)
-
-**We ARE competing with:**
-- ⚠️ Ignorance (biggest competitor - people don't monitor threats at all)
-- ⚠️ Manual news reading (Reddit r/cybersecurity, Bleeping Computer)
-- ⚠️ Vendor-specific alerts (Apple updates, Microsoft patches) - Siloed, not aggregated
-
-**Our Differentiation:**
-| Dimension | Competitors | Us |
-|-----------|-------------|-----|
-| **Target** | Security pros (3%) | Normal people (97%) |
-| **Language** | Technical jargon | Plain English |
-| **Filtering** | Volume (10K alerts) | Relevance (2-5 alerts) |
-| **Personalization** | None or industry-level | Device-level |
-| **Context** | CVE IDs | STRIDE + ATT&CK explained |
-| **Price** | $10K-100K/year | Free → $4.99/mo |
-| **Onboarding** | 30 minutes | 60 seconds |
-
-### What Happens When Big Tech Notices?
-
-**Likely Entrants:**
-- Microsoft (add to Defender for consumers)
-- Google (add to Google One)
-- Apple (add to iCloud+)
-
-**Our Defenses:**
-1. **First-mover advantage:** Build brand trust NOW, build habits
-2. **Platform agnostic:** We support ALL devices, they only support their own ecosystem
-3. **Quality:** Big tech is bad at curated, personalized experiences (they optimize for scale, not quality)
-4. **Multi-tenant:** We have SMB/MSP tiers, they don't serve businesses
-5. **Acquisition target:** If we execute well, we become acquisition target (good exit)
-
-**Real-world example:**
-- Microsoft built Windows Defender (free, built-in)
-- Norton/McAfee still have 50M+ paying customers
-- **Lesson:** Quality, trust, and habit beat free from big tech
+**Frontend:** React/Next.js, TypeScript, Tailwind CSS
+**Backend:** Python 3.11+, FastAPI, SQLAlchemy, Celery
+**Database:** PostgreSQL 15+, Redis 7+
+**TI:** MISP or OpenCTI
+**Infra:** GCP (Cloud Run, Cloud SQL, Storage)
 
 ---
 
 ## 💰 Business Model
 
-### Freemium SaaS Pricing
-
 ```
-FREE TIER (Personal):
-├─ Up to 5 devices
-├─ Daily email digest
+FREE (Personal):
+├─ 5 devices
+├─ Daily digest
 ├─ Basic dashboard
 ├─ STRIDE + MITRE context
-├─ Plain English translations
-└─ Community threat map
-
+├─ Proof tracking
+└─ Community map
 Price: $0
-Goal: Viral growth, brand awareness
+Goal: Viral growth, validate PMF
 
-────────────────────────────────────
-
-PRO TIER (Power Users):
+PRO (Power Users):
 ├─ Everything in Free
 ├─ Unlimited devices
 ├─ Instant critical alerts
 ├─ Priority translation
-├─ Advanced dashboard
-└─ Dark web monitoring (future)
+└─ Advanced dashboard
+Price: $4.99/mo ($49/yr)
+Goal: Monetize individuals
+Target: 5% conversion from free
 
-Price: $4.99/month or $49/year
-Goal: Monetize engaged individuals
-
-────────────────────────────────────
-
-SMB TIER (Small Businesses):
+SMB (Small Business):
 ├─ Everything in Pro
-├─ Team accounts (up to 25)
+├─ Team accounts (25 users)
 ├─ Device assignment
-├─ Team collaboration
 ├─ Compliance reports
 └─ Priority support
+Price: $49/mo ($490/yr)
+Goal: Monetize businesses
+Target: 2% of free users
 
-Price: $49/month or $490/year
-Goal: Monetize small businesses
+NGO (Non-Profit): ⭐
+├─ Everything in Pro
+├─ Mission-critical support
+├─ Case study participation
+└─ Community contribution
+Price: FREE (or $10/mo priority)
+Goal: Impact, credibility, PR
 
-────────────────────────────────────
-
-MSP TIER (Service Providers):
-├─ Everything in SMB
-├─ Multi-tenant management
-├─ Unlimited team members
+MSP (Service Provider):
+├─ Multi-tenant
 ├─ White-label portal
 ├─ API access
 └─ Dedicated support
+Price: $499/mo + $10/client
+Goal: Distribution channel
+Add: When they discover us
 
-Price: $499/month + $10/client
-Goal: Enable MSP offerings
-
-────────────────────────────────────
-
-ENTERPRISE TIER (Large Orgs):
-├─ Everything in MSP
-├─ On-premise deployment
-├─ SSO (SAML, LDAP)
-├─ STIX/TAXII export
-├─ Custom integrations
-└─ Dedicated team
-
-Price: Custom (starting $2,499/mo)
-Goal: Capture enterprises
+ENTERPRISE:
+├─ On-premise
+├─ SSO, RBAC
+├─ STIX/TAXII
+└─ Custom integrations
+Price: Custom ($2,499+/mo)
+Goal: Upsell from SMB
 ```
 
 ---
 
-## 📈 Success Metrics
+## 📈 90-Day Execution Plan
 
-### MVP Success Criteria
+### Phase 1: Build MVP (Weeks 1-6)
+
+**Week 1-2: Backend Foundation**
+- [ ] FastAPI project setup
+- [ ] PostgreSQL schema (users, devices, threats, alerts)
+- [ ] Deploy MISP or OpenCTI on GCP
+- [ ] Ingest 3 feeds (CISA KEV, NVD, AlienVault)
+
+**Week 3-4: Core Logic**
+- [ ] Device catalog (100 devices)
+- [ ] Threat matching engine (CPE-based)
+- [ ] MITRE ATT&CK integration
+- [ ] STRIDE categorization logic
+
+**Week 5-6: User Features**
+- [ ] Auth0/Okta integration
+- [ ] Signup + device onboarding flow
+- [ ] Daily digest generator
+- [ ] Email templates (SendGrid)
+
+### Phase 2: Launch (Weeks 7-8)
+
+**Week 7: Frontend + Polish**
+- [ ] Connect existing GCP frontend
+- [ ] Landing page + signup
+- [ ] Dashboard (simple view)
+- [ ] Mobile responsive
+
+**Week 8: Beta Testing**
+- [ ] Recruit 50 beta users (friends, network)
+- [ ] Fix critical bugs
+- [ ] Measure: Signup → device add → email open
+- [ ] Target: 70% activation, 40% open rate
+
+### Phase 3: Public Launch (Weeks 9-12)
+
+**Week 9: Product Hunt Launch**
+- [ ] Product Hunt submission
+- [ ] Reddit (r/cybersecurity, r/privacy)
+- [ ] Twitter/LinkedIn posts
+- [ ] Target: 500 signups
+
+**Week 10-11: Iterate**
+- [ ] User feedback surveys
+- [ ] Fix top 3 pain points
+- [ ] Add 10 most-requested devices
+- [ ] Improve translation quality
+
+**Week 12: Monetization**
+- [ ] Launch Pro tier ($4.99/mo)
+- [ ] Stripe integration
+- [ ] Upgrade prompts in app
+- [ ] Target: 5 paying users
+
+### Success Criteria (90 Days)
+
+**Must Have:**
+- ✅ 500+ signups
+- ✅ 40%+ email open rate
+- ✅ 70%+ activation (add devices)
+- ✅ 5+ paying users ($25 MRR)
+
+**Good to Have:**
+- ✅ 1,000 signups
+- ✅ 50%+ email open rate
+- ✅ 20 paying users ($100 MRR)
+- ✅ 1 SMB customer ($49 MRR)
+
+**Decision Point (Day 90):**
+- If metrics hit → Continue building, scale marketing
+- If metrics miss → Pivot or kill (fail fast)
+
+---
+
+## 🎯 Success Metrics
+
+### MVP Validation
 
 **User Acquisition:**
-- Free signups: 500+ users
-- Week-over-week growth: >10%
-- Activation rate: >70%
+- Signups: 500+ (Week 10)
+- W-o-W growth: >10%
+- Activation rate: >70% (add 1+ device)
 - Referral rate: >5%
 
 **Engagement:**
 - Weekly active: >30%
 - Email open rate: >40%
 - Dashboard visits: >2/week
-- Alerts resolved: >60%
+- Alerts acted on: >60%
 
 **Quality:**
-- Comprehension: >95%
+- Comprehension: >95% (survey)
 - False positives: <5%
 - NPS: >40
 - Churn: <5%/month
@@ -1536,70 +864,95 @@ Goal: Capture enterprises
 - Free → Pro: >3%
 - Free → SMB: >1%
 - MRR growth: >20%/month
+- CAC payback: <6 months
 
 ---
 
-## ⚠️ Risk Assessment
+## ⚠️ Risks & Mitigations
 
-### Key Risks & Mitigations
+**Risk 1: Translation quality insufficient**
+→ Beta test 100 users, iterate, target 95% comprehension
 
-**Risk 1: Translation Quality**
-- Mitigation: Beta test with 100 users, target >95% comprehension
+**Risk 2: Device matching inaccurate**
+→ Start high-confidence only, user feedback loop, <5% false positive
 
-**Risk 2: Device Matching Accuracy**
-- Mitigation: Start with high-confidence matches, user feedback loop
+**Risk 3: User acquisition too slow**
+→ Content marketing, SEO, Product Hunt, referrals, pivot at Day 90
 
-**Risk 3: User Acquisition**
-- Mitigation: Content marketing, SEO, Product Hunt, referrals
+**Risk 4: Big tech enters (Microsoft/Google/Apple)**
+→ First-mover advantage, platform agnostic, quality focus, acquisition target
 
-**Risk 4: Big Tech Entry**
-- Defense: First-mover, platform agnostic, quality focus
-
-**Risk 5: Scope Creep**
-- Mitigation: Re-read EXCLUSIONS monthly, require 10+ customer requests
+**Risk 5: Scope creep returns**
+→ Re-read EXCLUSIONS monthly, require 10+ customer requests before building
 
 ---
 
-## 🗝️ Key Decisions & Rationale
+## 🏆 Competitive Moats
 
-### Critical Choices
+**What competitors can't easily replicate:**
 
-1. **Device-based filtering** (not industry-based) - More precise, actionable
-2. **Plain English first** - Target 97% non-technical audience
-3. **STRIDE + ATT&CK only** - Complete coverage, avoid confusion
-4. **100 devices for MVP** (not 20K) - Sustainable, validates PMF
-5. **Auth0/Okta** (not custom IdP) - Focus on core competency
-6. **Daily digest default** - Habit formation, lower cost
-7. **Defer STIX/TAXII** - Add when customers pay for it
-8. **No GRC tracking** - Show context only, avoid scope creep
-9. **Same UI all tiers** - Zero friction upgrades
-10. **GPT-4 for translation** - Quality over cost
+1. **Translation Quality** (12+ months to match)
+   - Domain expertise + GPT-4 + human review + user feedback loop
+
+2. **Device Catalog** (6+ months to build)
+   - Curated mappings + CPE database + user-driven growth
+
+3. **User Habituation** (strongest moat)
+   - Daily digest = habit formation = switching cost
+
+4. **Network Effects** (future)
+   - More users → better data → better matching → more users
+
+5. **STRIDE + ATT&CK Education** (unique positioning)
+   - Only consumer platform teaching both frameworks
+
+---
+
+## 🗝️ Key Decisions
+
+1. **Consumer-first** (not MSP) - Blue ocean, bigger TAM
+2. **Device-based filtering** - Precision beats volume
+3. **Plain English first** - 97% market accessibility
+4. **STRIDE + ATT&CK only** - Complete, avoid confusion
+5. **100 devices MVP** - Sustainable, validates PMF
+6. **Auth0/Okta** - Focus on core competency
+7. **Daily digest default** - Habit formation
+8. **Proof tracking** - Differentiation + compliance
+9. **NGO tier** - Impact + credibility
+10. **90-day test** - Fail fast, pivot or scale
 
 ---
 
 ## 📚 References
 
-- MISP Project: https://www.misp-project.org/
+- MISP: https://www.misp-project.org/
 - MITRE ATT&CK: https://attack.mitre.org/
 - OpenCTI: https://www.opencti.io/
-- Market size: $12B+ threat intelligence (Gartner 2024)
+- Market size: $12B threat intelligence (Gartner 2024)
+- Consumer security: 1Password ($200M ARR), Cloudflare ($1B+)
 
 ---
 
-## 📝 Document Information
+## 📞 Contact
 
-**Version:** 1.0
-**Last Updated:** 2025-11-12
-**Status:** Ready for Development
+**Founder:** Dheeru Sharma
+**Email:** dheeru@techautomationservices.com
+**Expertise:** 6+ years cybersecurity (Amazon, Capgemini), CISSP, IAM/GRC
 
-**Purpose:** Single source of truth for TIH product strategy, scope, and rationale.
+---
+
+## 📝 Document Info
+
+**Version:** 2.0 (BISO Hybrid Strategy)
+**Updated:** 2025-11-12
+**Status:** Ready for 90-Day Execution
 
 **How to Use:**
-- Before building: Check NOW/NEXT/EXCLUSIONS
-- When scope creep tempts: Re-read EXCLUSIONS
-- When customer requests feature: Check if 10+ asking
-- When questioning strategy: Review "Why This Works"
+- Before building: Check NOW section
+- When tempted: Re-read EXCLUSIONS
+- Customer request: Require 10+ asking
+- Day 90: Validate or pivot
 
 ---
 
-**This is our blueprint. Ship fast, stay focused, build something people love.** 🚀
+**This is our blueprint. Consumer-first, proof-tracked, accessible threat intel. Ship in 90 days.** 🚀
